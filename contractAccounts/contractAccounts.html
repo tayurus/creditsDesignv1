@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="eng"
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Credits</title>
+
+    <!-- JS-Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script type="text/javascript" src="js/contractAccounts.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/contractAccounts.css">
+    <link rel="stylesheet" href="css/contractAccountsAdaptive.css">
+</head>
+
+<body>
+
+    <div class="contractAccounts">
+
+        <div class="contractAccounts-tabs">
+            <div class="contractAccounts-tabs-item active">Transaction</div>
+            <div class="contractAccounts-tabs-item">Token Transfer</div>
+            <div class="contractAccounts-tabs-item">Contract Source</div>
+            <div class="contractAccounts-tabs-item">Read Smart Contract</div>
+        </div>
+
+        <div class="contractAccounts-info">
+
+            <div class="contractAccounts-info-addresses">
+                <img src="img/contract.png" alt="">
+                <div class="contractAccounts-addresses-wrapper">
+
+                    <div class="contractAccounts-address">
+                        <div class="contractAccounts-address-title">Contract address</div>
+                        <div class="contractAccounts-address-text">0xab7c75abC0C4d48d1bd0xab7c75abC0C4d48d1bd</div>
+                    </div>
+
+                    <div class="contractAccounts-creator">
+                        <div class="contractAccounts-creator-title">Contract creator</div>
+                        <a href="#" class="contractAccounts-creator-text">0xab7c75abC0C4d48d1bd0xab7c75abC0C4d48d1bd</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="contractAccounts-info-balances">
+                <div class="contractAccounts-balances-eth">
+                    <div class="contractAccounts-eth-title">ETH Balance:</div>
+                    <div class="contractAccounts-eth-value">1500.00134534123546 Ether</div>
+                </div>
+
+                <div class="contractAccounts-balances-cs">
+                    <div class="contractAccounts-cs-title">CS Balance:</div>
+                    <div class="contractAccounts-cs-value">1500.4354 Credits</div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="contractAccounts-transactions">
+
+            <div class="contractAccounts-transactions-top">
+                <div class="contractAccounts-top-title">Transactions</div>
+                <div class="contractAccounts-top-noOf">
+                    <div class="contractAccounts-noOf-title">No Of Transactions:</div>
+                    <div class="contractAccounts-noOf-value">5 txns</div>
+                </div>
+            </div>
+
+            <div class="contractAccounts-pagination">
+                <button class="contractAccounts-pagination-first">First</button>
+                <button class="contractAccounts-pagination-prev">Prev</button>
+                <div class="contractAccounts-pagination-current">
+                    Page <span class="contractAccounts-current-value">1</span> of <span class="contractAccounts-current-total">5</span>
+                </div>
+                <button class="contractAccounts-pagination-next">Next</button>
+                <button class="contractAccounts-pagination-last">Last</button>
+            </div>
+
+            <table class="contractAccounts-table">
+                <tr>
+                    <th>TxHash</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Age</th>
+                    <th>Value</th>
+                    <th>Fee</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td><a href="#">0xert35jk534jf5gh</a></td>
+                    <td><a href="#">0xert35jk534jf5gh</a></td>
+                    <td><a href="#">0xert35jk534jf5gh</a></td>
+                    <td>1 hrs 30 min ago</td>
+                    <td>100 Credits</td>
+                    <td>0.001</td>
+                    <td>Success</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

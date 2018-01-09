@@ -1,0 +1,31 @@
+@media (max-width:830px), (max-device-width:830px) {
+    .contract-inputs-wrapper {
+        justify-content: space-around;
+    }
+    .toDeploy {
+        font-size: 0px;
+        right: 11%;
+        color: #929292;
+        top: 31%;
+    }
+    .toInteract {
+        font-size: 0px;
+        color: #929292;
+        top: 33%;
+    }
+    .contract-address-wrapper {
+        margin-bottom: 15px;
+    }
+    .contract-interact-title, .deploy-title {
+        font-size: 22px;
+    }
+    .deploy-key-wrapper {
+        text-align: center;
+    }
+    .deploy-singBtn {
+        padding: 10px 40px;
+    }
+    .contract-address-wrapper, .contract-existingContract-wrapper {
+        margin-right: 0px;
+    }
+}

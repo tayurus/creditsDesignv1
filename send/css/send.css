@@ -1,0 +1,53 @@
+.send {
+    padding: 5px;
+    border: 2px solid #aaa;
+}
+
+.send label{
+    margin-right: 20px;
+}
+
+.send input{
+    border: 1px solid;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.send-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.send-coin-wrapper {
+    font-size: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+#send-coin-select{
+    border: 1px solid;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.send-address-wrapper,.send-amount-wrapper  {
+    margin: auto;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+
+.send-btn {
+    display: block;
+    margin: auto;
+    background: #5ac1de;
+    border: none;
+    padding: 10px 10%;
+    font-size: 20px;
+    color: #fff;
+}

@@ -1,0 +1,115 @@
+.creditsMonitoring{
+    padding: 30px 15px;
+    background: #f7f6f6;
+}
+
+.creditsMonitoring-row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.creditsMonitoring-row-item{
+    width: 200px;
+    height: 75px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.creditsMonitoring-row-item:nth-child(1){
+    background-color: #91d46d;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    background-size: 35px 67px;
+}
+
+.creditsMonitoring-row-item:nth-child(2){
+    background-color: #c0c0c0;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    background-size: 35px 67px;
+}
+.creditsMonitoring-row-item:nth-child(3){
+    background-color: #75a9f9;
+    background-image: url('../img/tokenI.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 60px 60px;
+}
+
+.creditsMonitoring-item-csRate::before, .creditsMonitoring-item-ethRate::before{
+    position: absolute;
+    content: "$";
+    color: #fff;
+    font-size: 30px;
+    margin-left: -15px;
+}
+.creditsMonitoring-item-csCount::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 30px;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 15px 30px;
+    margin-left: -18px;
+    margin-top: 3px;
+}
+
+.creditsMonitoring-item-title{
+    font-size: 20px;
+    color: #fff;
+}
+
+.creditsMonitoring-item-csRate, .creditsMonitoring-item-csCount, .creditsMonitoring-item-ethRate{
+    font-size: 30px;
+    color: #fff;
+    padding-left: 20px;
+}
+
+.creditsMonitoring-graph{
+    width: 90%;
+    display:block;
+    margin: auto;
+}
+
+.creditsMonitoring-tables{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.creditsMonitoring-top60, .creditsMonitoring-recent{
+    background: #fff;
+    padding: 15px;
+    margin: 15px;
+    overflow-x: auto;
+    padding-bottom: 30px;
+}
+
+.creditsMonitoring-top60-table, .creditsMonitoring-recent-table{
+    width: 100%;
+}
+
+.creditsMonitoring-top60-title, .creditsMonitoring-recent-title{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.creditsMonitoring-recent-table tr td{
+    font-size: 20px;
+    padding: 0px 5px;
+}
+
+.creditsMonitoring-top60-table tr td{
+    font-size: 25px;
+}
+
+.creditsMonitoring-top60-table tr td:nth-child(3){
+    text-align: right;
+}

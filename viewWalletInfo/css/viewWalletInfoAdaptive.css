@@ -1,0 +1,20 @@
+@media (max-width:775px),(max-device-width:775px) {
+    .viewWalletInfo-top img{
+        margin: auto;
+    }
+
+    .viewWalletInfo-top-wrapper{
+        text-align: center;
+        margin: auto;
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    .viewWalletInfo-windows{
+        justify-content: space-around;
+    }
+
+    .viewWalletInfo-windows-wrapper{
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,69 @@
+.newWallet{
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.newWallet-enter{
+    text-align: left;
+}
+
+.newWallet h1, h2{
+    text-align: center;
+}
+
+.newWallet .hint{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+input[name="newWallet-password"]{
+    padding: 12px;
+    font-size: 13px;
+}
+
+input[name="newWallet-key"]{
+    display: block;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.newWallet-createBtn, .newWallet-downloadKey{
+    background: #5ac1de;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.openWallet-unlockBtn{
+    display: block;
+    margin: auto;
+    background: #5ac1de;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.newWallet-wrapper{
+    display: flex;
+}
+
+.newWallet-userKey{
+    padding: 10px;
+    word-wrap:break-word;
+    font-size: 20px;
+}
+
+.openWallet{
+    width: 90%;
+    border: 2px solid #ccc;
+    margin: auto;
+    padding: 10px;
+}

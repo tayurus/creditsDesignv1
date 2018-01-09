@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="eng"
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Credits</title>
+
+    <!-- JS-Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/html5shiv-printshiv.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/transactions.css">
+</head>
+
+<body>
+
+    <div class="transactions">
+
+        <div class="transactions-top">
+            <div class="transactions-top-eth">725</div>
+            <div class="transactions-top-dynamic growth">0.69%</div>
+
+            <div class="transactions-top-rate">
+                Hash Rate
+                <br>
+                <span>147,154 GH/s</span>
+            </div>
+
+            <div class="transactions-count">
+                Transactions
+                <br>
+                <span>108565</span>
+            </div>
+
+            <div class="transactions-cs-wrapper">
+                <input type="number" placeholder="value">
+                <span>CS</span>
+            </div>
+
+            <div class="transactions-eth-wrapper">
+                <input type="number" placeholder="value">
+                <select>
+                    <option value="eth">ETH</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="transactions-windows">
+
+            <div class="transactions-windows-last">
+                <div class="transactions-last-top">
+                    <span>Transaction</span>
+                    <button class="transactions-viewAll">View All</button>
+                </div>
+                <div class="transactions-last-list">
+                    <div class="transactions-last-item">
+                        <div class="transactions-last-item-wrapper">
+                            <div class="transactions-item-title">
+                                Tx# 0XED5DXED5DXED5DXED5DXED5D
+                            </div>
+                            <div class="transactions-item-fromTo">
+                                From <span class="transactions-item-from">0x5435grw34454w545e3</span> To <span class="transactions-item-to">0x5435grw34454w545e3</span>
+                            </div>
+                            <div class="transactions-item-amount">
+                                Amount <span>10</span> CS
+                            </div>
+                        </div>
+                        <div class="transactions-item-time">
+                            1 min ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="transactions-top10">
+                <div class="transactions-top10-title">Top 10 tokens for X days</div>
+                <table class="transactions-top10-table">
+                    <tr>
+                        <td>1</td>
+                        <td>Credits</td>
+                        <td><span>100</span> operation</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CUSTOM JS -->
+    <script type="text/javascript" src="js/transactions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+@media  (max-device-width:850px),(max-width: 850px) {
+	.contractAccounts-table {
+		overflow-x: auto;
+		display: block;
+        padding-bottom: 20px;
+	}
+
+    .contractAccounts-info-addresses img{
+        margin: auto;
+    }
+}
+
+
+@media  (max-device-width:650px),(max-width: 650px) {
+    .contractAccounts{
+        padding-top: 0px;
+    }
+
+	.contractAccounts-tabs{
+        display: block;
+    }
+
+
+}

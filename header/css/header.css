@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+button, select {
+    cursor: pointer;
+}
+
+/* ///////////////////////////////////////////////// */
+
+header {
+    width: 300px;
+    padding-bottom: 30px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    float: left;
+    background-color: #232323;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+}
+
+header::-webkit-scrollbar {
+    display: none;
+}
+
+/* ////////////////////////////////////////////////////////// */
+
+.header-top {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-top .logo {
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.header-top .logo img {
+    width: 25px;
+    height: 47px;
+}
+
+/* ////////////////////////////////////////////////////////////// */
+
+.menuBox {
+    cursor: pointer;
+}
+
+.menuBox div {
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #c0c0c0;
+}
+
+/* ////////////////////////////////////////////////////////////// */
+
+.header-search {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #444;
+}
+
+.header-search [name="search"] {
+    background-color: #444444;
+    padding: 2px 10px;
+    border: 1px solid #cccccc;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #fff;
+}
+
+.header-search button {
+    border: 1px solid #cccccc;
+    background-color: #7a7a7a;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* ////////////////////////////////////////////////////////////// */
+
+.header-menu {
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-menu .menu-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0px;
+    user-select: none;
+}
+
+.header-menu .menu-item:hover>.menu-item-text {
+    color: #0e6ae5;
+}
+
+.header-menu .menu-item.active {
+    background-color: #333333;
+}
+
+.header-menu .menu-item-text {
+    color: #ebebeb;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.header-menu .menu-item.hasSubmenu::after {
+    width: 25px;
+    height: 25px;
+    content: "";
+    position: absolute;
+    right: 10px;
+    background: url("../img/submenuArrowClose.png") no-repeat center;
+    background-size: cover;
+}
+
+/* ////////////////////////////////////////////////////////////// */
+
+.menu-item.hasSubmenu.submenuOpened+.submenu {
+    display: block
+}
+
+.menu-item.hasSubmenu.submenuOpened::after {
+    background: url("../img/submenuArrowOpen.png") no-repeat center;
+    background-size: cover;
+}
+
+.menu-item-icon {
+    width: 35px;
+    height: 35px;
+    margin-left: 15px;
+}
+
+/* ////////////////////////////////////////////////////////////// */
+
+.monitorI {
+    background: url("../img/monitorI.png") no-repeat center;
+    background-size: cover;
+}
+
+.accountI {
+    background: url("../img/accountI.png") no-repeat center;
+    background-size: cover;
+}
+
+.tokenI {
+    background: url("../img/tokenI.png") no-repeat center;
+    background-size: cover;
+}
+
+.newWalletI {
+    background: url("../img/newWalletI.png") no-repeat center;
+    background-size: cover;
+}
+
+.sendTokensI {
+    background: url("../img/sendTokensI.png") no-repeat center;
+    background-size: cover;
+}
+
+.contractsI {
+    background: url("../img/contractsI.png") no-repeat center;
+    background-size: cover;
+}
+
+.viewWalletInfoI {
+    background: url("../img/viewWalletInfoI.png") no-repeat center;
+    background-size: cover;
+}
+
+/* ////////////////////////////////////////////////////////////// */
+
+.submenu {
+    display: none;
+    padding: 5px 0px;
+}
+
+.submenu-item {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.submenu-item:hover {
+    color: tomato;
+}
+
+/* ////////////////////////////////////////////////////////////// */
+
+.header-langSelect {
+    display: block;
+    margin: auto;
+    padding: 5px 10px;
+    background-color: #232323;
+    color: #fff;
+    font-size: 25px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+.content {
+    margin-left: 300px;
+    background: #f7f6f6;
+}

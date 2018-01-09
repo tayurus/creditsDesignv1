@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Credits</title>
+
+    <!-- JS-Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/html5shiv-printshiv.min.js"></script>
+
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/contract.css">
+    <link rel="stylesheet" href="css/contractsAdaptive.css">
+</head>
+
+<body>
+
+    <div class="contract">
+
+        <div class="contract-interact">
+            <div class="contract-interact-title">
+                Interact with Contract
+                <div class="toDeploy">Deploy Contract</div>
+            </div>
+
+            <div class="contract-interact-inputs">
+                <div class="contract-inputs-wrapper">
+                    <div class="contract-address-wrapper">
+                        <label for="address">Contract Address</label>
+                        <input type="text" id="address" placeholder="0x1CFE54GRG85485843Fe13wef545FG">
+                    </div>
+
+
+                    <div class="contract-existingContract-wrapper">
+                        <label for="contract">Select Existing Contract</label>
+                        <select id="contract">
+                            <option value="" disabled selected hidden>Select a contract...</option>
+                            <option value="gerg"  >Opt</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="contract-json-wrapper">
+                    <label for="">ABI / JSON Interface</label>
+                    <textarea id="json" placeholder='{"key" : "value"}'></textarea>
+                </div>
+
+                <button class="contract-interact-access">ACCESS</button>
+
+            </div>
+
+            <div class="contract-interact-readWrite">
+                <label for="readWrite">Read/Write contract</label>
+                <div class="contract-readWrite-address">0x1CFE54GRG85485843Fe13wef545FG</div>
+                <select id="readWrite">
+                    <option disabled selected hidden>Select a function</option>
+                </select>
+            </div>
+        </div>
+
+
+
+        <div class="deploy">
+            <div class="deploy-title">
+                Deploy Contract
+                <div class="toInteract">Interact with Contract</div>
+            </div>
+
+            <div class="deploy-input">
+                <div class="deploy-caption">Open Wallet</div>
+
+                <div class="deploy-key-wrapper">
+                    <label for="privateKey">Private key</label>
+                    <input type="text" id="privateKey" placeholder="55ajhy35jkj5tfs51frty4f5ghg6h3g4h3hg5jkj5tfs51frty4f5ghg6">
+                </div>
+
+                <button class="deploy-unlockBtn">UNLOCK</button>
+
+                <div class="deploy-caption">Byte Code</div>
+                <textarea class="deploy-byteCode"></textarea>
+
+                <div class="deploy-caption">Gas limit</div>
+                <input type="number" name="gas" placeholder="30000">
+
+                <button class="deploy-singBtn">Sing Transaction</button>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- CUSTOM JS -->
+    <script type="text/javascript" src="js/contract.js"></script>
+</body>
+
+</html>

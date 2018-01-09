@@ -1,0 +1,129 @@
+.viewWalletInfo{
+    background-color: #f7f6f6;
+    padding: 10px;
+}
+
+.viewWalletInfo-top{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    padding: 20px 20px 30px 20px;
+    background-color: #fff;
+    margin-top: 15px;
+}
+
+.viewWalletInfo-address-title,  .viewWalletInfo-key-title{
+    font-size: 35px;
+    font-weight: bold;
+    /* margin-bottom: 10px; */
+}
+
+.viewWalletInfo-address-text, .viewWalletInfo-key-text{
+    font-size: 22px;
+}
+
+.viewWalletInfo-key-text{
+    display: inline-block;
+}
+
+.viewWalletInfo-hideKey{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+
+.viewWalletInfo-windows{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.viewWalletInfo-windows-balance{
+    max-width: 400px;
+    background: #80c784;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+}
+
+.viewWalletInfo-balance-eth, .viewWalletInfo-balance-cs{
+    font-size: 25px;
+    color: #fff;
+}
+
+.viewWalletInfo-windows-buy{
+    max-width: 400px;
+    background: #e5a649;
+    padding: 30px 20px;
+}
+
+.viewWalletInfo-buy-title, .viewWalletInfo-balance-title,.viewWalletInfo-token-title{
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.viewWalletInfo-windows-buy button{
+    display: block;
+    margin: auto;
+    color: #fff;
+    font-size: 25px;
+    padding: 15px 30px;
+    background-color: tomato;
+    border: none;
+    cursor: pointer;
+}
+
+.viewWalletInfo-windows-token{
+    max-width: 400px;
+    background: #8fa3ae;
+    padding: 30px 70px 0px 20px;
+    position: relative;
+}
+
+.viewWalletInfo-token-add{
+    font-size: 20px;
+    color: #d3e0e0;
+    cursor: pointer;
+}
+
+.viewWalletInfo-token-list{
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+
+.viewWalletInfo-token-showAll{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 5px 0px;
+    text-align: center;
+    color: #d3e0e0;
+    background: rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+.viewWalletInfo-list-item{
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.viewWalletInfo-token-showAll::after{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: url("../img/token-showAll.png") no-repeat center;
+    background-size: 25px;
+}
+
+.viewWalletInfo-token-showAll.showed::after{
+    background: url("../img/token-hide.png") no-repeat center;
+    background-size: 25px;
+}

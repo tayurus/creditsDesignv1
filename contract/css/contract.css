@@ -1,0 +1,189 @@
+.contract {
+    overflow: hidden;
+    position: relative;
+    height: 700px;
+}
+
+.contract-interact, .deploy {
+    position: absolute;
+    width: 100%;
+}
+
+.deploy {
+    margin-left: 967px;
+}
+
+.contract-interact-title, .deploy-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    padding: 30px 0px;
+    border: 1px solid #c0c0c0;
+    margin-bottom: 20px;
+}
+
+.toDeploy {
+    position: absolute;
+    right: 5%;
+    color: #929292;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.toInteract {
+    position: absolute;
+    color: #929292;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    left: 4%;
+}
+
+.toInteract::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url("../img/toInteract.png") no-repeat center;
+    background-size: 30px;
+    left: -11%;
+}
+
+.toDeploy::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url("../img/toDeploy.png") no-repeat center;
+    background-size: 30px;
+}
+
+.contract-interact-inputs, .deploy-input {
+    padding: 20px 30px;
+    border: 1px solid #000;
+}
+
+.contract-inputs-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.contract-address-wrapper, .contract-existingContract-wrapper {
+    width: 40%;
+    min-width: 300px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contract-address-wrapper label, .contract-existingContract-wrapper label, .contract-json-wrapper label, .contract-interact-readWrite label {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.deploy-key-wrapper label {
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+#address, #contract, #readWrite {
+    padding: 10px 5px;
+    border: 1px solid #000;
+}
+
+#privateKey {
+    padding: 10px 5px;
+    border: 1px solid #000;
+    width: 80%;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contract-json-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#json {
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    overflow: hidden;
+    resize: none;
+}
+
+.contract-interact-access {
+    border: none;
+    display: block;
+    margin: auto;
+    color: #fff;
+    background-color: #2296f3;
+    padding: 10px 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contract-interact-readWrite {
+    border: 1px solid #c0c0c0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contract-readWrite-address {
+    color: #7a7a7a;
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.deploy-caption {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.deploy-unlockBtn, .deploy-singBtn {
+    display: block;
+    margin: auto;
+    background-color: #2296f3;
+    padding: 10px 80px;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.deploy-byteCode {
+    resize: none;
+    height: 150px;
+    width: 80%;
+    border: 1px solid #000;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+input[name="gas"] {
+    padding: 10px 5px;
+    border: 1px solid #000;
+    width: 80%;
+    font-size: 20px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.deploy-singBtn {
+    background-color: #0a44a4;
+    padding: 10px 90px;
+}

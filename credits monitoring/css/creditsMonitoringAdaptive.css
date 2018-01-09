@@ -1,0 +1,11 @@
+@media (max-width:580px),(max-device-width:580px) {
+    .creditsMonitoring-top60, .creditsMonitoring-recent{
+        width: 90%;
+    }
+
+
+    .creditsMonitoring-recent-table tr td{
+        padding: 0px;
+        font-size: 12px;
+    }
+}
